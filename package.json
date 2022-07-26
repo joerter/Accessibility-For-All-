@@ -1,0 +1,22 @@
+{
+  "name": "accessibility-for-all-",
+  "version": "1.0.0",
+  "description": "Maya's intern project",
+  "main": "index.js",
+  "scripts": {
+    "start": "browser-sync start --server --files index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joerter/Accessibility-For-All-.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joerter/Accessibility-For-All-/issues"
+  },
+  "homepage": "https://github.com/joerter/Accessibility-For-All-#readme",
+  "devDependencies": {
+    "browser-sync": "^2.27.10"
+  }
+}
