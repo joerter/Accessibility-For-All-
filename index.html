@@ -1,41 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Accessibility For All</title>
-</head>
-<body>
- <h1>Hi Maya</h1> 
- <h2>This is my project</h2>
- <h3>Hello!</h3>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css">
+    <title>Accessibility For All</title>
+  </head>
 
-<form id="form" action="" method="get" class="form-example">
-  
-  <div class="form-example">
-    <label for="address">Enter your address: </label>
-    <input type="address" name="address" id="address"
-required>
-  </div>
+  <body>
+    <h1>Hi Maya</h1>
+    <h2>This is my project</h2>
+    <h3>Hello!</h3>
 
-  <input type="submit" value="submit!">
-  <p id="test">Enter your information above and then click the submit button when you're finished</p>
-  
-  <script>
-    function doSomething(event) {
-      event.preventDefault()
-      console.log(event)
-      document.getElementById("test").innerHTML = "Hi! I hope you have an amazing day. ";
-      var input = document.getElementById("address").value;
-      console.log(input);
-    }
+    <form id="form" action="" method="get" class="form-example">
+      <div class="form-example">
+        <label for="address">Enter your address: </label>
+        <input type="address" name="address" id="address" required />
+      </div>
+
+      <input type="submit" value="submit!" />
+      <p id="test">
+        Enter your information above and then click the submit button when
+        you're finished
+      </p>
+    </form>
+
+    <h3>Organizations</h3>
+    <div id="organizations"></div>
+
+    <script src="./organizations.js"></script>
+
+    <script>
+      function getOrganizations() {
+        return window.ORGANIZATIONS;
+      }
+
+      function doSomething(event) {
+        event.preventDefault();
+        console.log(event);
+        document.getElementById('test').innerHTML =
+          'Hi! I hope you have an amazing day. ';
+        var input = document.getElementById('address').value;
+        console.log(input);
+
+        var organizationsContainer = document.getElementById('organizations');
+        var allOrganizations = getOrganizations();
+
+        // DOM Manipulation
+        for (let i = 0; i < allOrganizations.length; i++) {
+          var orgContainer = document.createElement('div');
+          orgContainer.classList.add('organization');
+          //var image = document.createElement('img');
+          var address = document.createElement('p');
+          var name = document.createElement('p'); // create a <p></p> element
+
+          var currentOrg = allOrganizations[i];
+          name.innerHTML = `${currentOrg.name}`;
+          address.innerHTML = `${currentOrg.streetAddress}`;
+          // display city, zipCode, state, and phoneNumber
+          //image.src = currentOrg.image;
+
+          orgContainer.appendChild(name);
+          orgContainer.appendChild(address);
+          //orgContainer.appendChild(image);
+          organizationsContainer.appendChild(orgContainer); // append the new element to the div
+        }
+      }
+
       const form = document.getElementById('form');
       form.addEventListener('submit', doSomething);
-  </script>
-</form>
-
-
-
-</body>
+    </script>
+  </body>
 </html>

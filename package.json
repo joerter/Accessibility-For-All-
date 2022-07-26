@@ -4,7 +4,8 @@
   "description": "Maya's intern project",
   "main": "index.js",
   "scripts": {
-    "start": "browser-sync start --server --files index.html"
+    "start": "browser-sync start --server --files index.html",
+    "generate:organizations": "zx generateOrganizations.mjs"
   },
   "repository": {
     "type": "git",
@@ -17,6 +18,8 @@
   },
   "homepage": "https://github.com/joerter/Accessibility-For-All-#readme",
   "devDependencies": {
-    "browser-sync": "^2.27.10"
+    "@faker-js/faker": "^7.3.0",
+    "browser-sync": "^2.27.10",
+    "zx": "^7.0.7"
   }
 }
