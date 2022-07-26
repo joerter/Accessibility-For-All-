@@ -9,6 +9,33 @@
 <body>
  <h1>Hi Maya</h1> 
  <h2>This is my project</h2>
- 
+ <h3>Hello!</h3>
+
+<form id="form" action="" method="get" class="form-example">
+  
+  <div class="form-example">
+    <label for="address">Enter your address: </label>
+    <input type="address" name="address" id="address"
+required>
+  </div>
+
+  <input type="submit" value="submit!">
+  <p id="test">Enter your information above and then click the submit button when you're finished</p>
+  
+  <script>
+    function doSomething(event) {
+      event.preventDefault()
+      console.log(event)
+      document.getElementById("test").innerHTML = "Hi! I hope you have an amazing day. ";
+      var input = document.getElementById("address").value;
+      console.log(input);
+    }
+      const form = document.getElementById('form');
+      form.addEventListener('submit', doSomething);
+  </script>
+</form>
+
+
+
 </body>
 </html>
