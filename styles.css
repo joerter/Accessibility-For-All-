@@ -1,3 +1,60 @@
 .organization {
-  border: 1px solid aqua;
+  border: 7px solid #087F8C;
+  text-align: center;
+  color: grey;
+  margin: 0 auto;
+  max-width: 50em;
+
+}
+
+body {
+  font-family: "Helvetica";
+  line-height: 1.5;
+  padding: 4em 1em;
+  color: #5A5353;
+  background-color: #E6CCBE;   
+}
+
+h2 {
+  margin-top: 1em;
+  padding-top: 1em;
+}
+
+h1,
+h2,
+strong {
+  color: #333;
+}
+
+code,
+pre {
+  background: #eee;
+}
+
+code {
+  padding: 2px 4px;
+  vertical-align: text-bottom;
+}
+
+pre {
+  padding: 1em;
+}
+
+
+#form {
+  font-size: 30px;
+}
+
+#organizations {
+  font-size: 25px;
+}
+
+#test {
+  font-size: 30px;
+}
+
+#organization {
+  text-decoration: underline;
+  font-size: 35px;
+  text-align: center;
 }

@@ -9,9 +9,6 @@
   </head>
 
   <body>
-    <h1>Hi Maya</h1>
-    <h2>This is my project</h2>
-    <h3>Hello!</h3>
 
     <form id="form" action="" method="get" class="form-example">
       <div class="form-example">
@@ -26,7 +23,7 @@
       </p>
     </form>
 
-    <h3>Organizations</h3>
+    <h3 id="organization">Organizations</h3>
     <div id="organizations"></div>
 
     <script src="./organizations.js"></script>
@@ -53,16 +50,27 @@
           orgContainer.classList.add('organization');
           //var image = document.createElement('img');
           var address = document.createElement('p');
+          var city = document.createElement('p');
+          var zipCode = document.createElement('p');
+          var state = document.createElement('p');
           var name = document.createElement('p'); // create a <p></p> element
+          var phoneNumber = document.createElement('p');
 
           var currentOrg = allOrganizations[i];
           name.innerHTML = `${currentOrg.name}`;
           address.innerHTML = `${currentOrg.streetAddress}`;
-          // display city, zipCode, state, and phoneNumber
+          city.innerHTML = `${currentOrg.city}`;
+          zipCode.innerHTML = `${currentOrg.zipCode}`;
+          state.innerHTML = `${currentOrg.state}`;
+          phoneNumber.innerHTML = `${currentOrg.phoneNumber}`;
           //image.src = currentOrg.image;
 
           orgContainer.appendChild(name);
           orgContainer.appendChild(address);
+          orgContainer.appendChild(city);
+          orgContainer.appendChild(zipCode);
+          orgContainer.appendChild(state);
+          orgContainer.appendChild(phoneNumber);
           //orgContainer.appendChild(image);
           organizationsContainer.appendChild(orgContainer); // append the new element to the div
         }
