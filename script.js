@@ -38,7 +38,7 @@
       zipCode.innerHTML = `${currentOrg.zipCode}`;
       state.innerHTML = `${currentOrg.state}`;
       phoneNumber.innerHTML = `${currentOrg.phoneNumber}`;
-      checkboxLabel.innerHTML = "select the organizations you want"
+      checkboxLabel.innerHTML = "select the checkbox if you like this organization"
       //image.src = currentOrg.image;
 
       orgContainer.appendChild(name);

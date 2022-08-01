@@ -55,7 +55,7 @@ pre {
 
 #organization {
   text-decoration: underline;
-  font-size: 35px;
+  font-size: 45px;
   text-align: center;
 }
 
@@ -71,4 +71,25 @@ pre {
 #three {
   text-align: inline;
 
+}
+
+#label {
+  text-align: center;
+  font-size: 25px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+#submitButton {
+  font-size: 25px;
+  background-color: #087F8C;
+  color: white;
+  margin-top: 10px;
+}
+
+.organization-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
 }
