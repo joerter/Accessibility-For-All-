@@ -7,7 +7,7 @@
     event.preventDefault();
     console.log(event);
     document.getElementById('test').innerHTML =
-      'Hi! I hope you have an amazing day. ';
+      'Thank you for providing your address! ';
     var input = document.getElementById('address').value;
     console.log(input);
 
@@ -17,6 +17,7 @@
     // DOM Manipulation
     for (let i = 0; i < allOrganizations.length; i++) {
       var orgContainer = document.createElement('div');
+      var currentOrg = allOrganizations[i];
       orgContainer.classList.add('organization');
       //var image = document.createElement('img');
       var address = document.createElement('p');
@@ -27,11 +28,12 @@
       var phoneNumber = document.createElement('p');
       var checkboxLabel = document.createElement('label');
       var checkbox = document.createElement('input');
+      checkbox.setAttribute('name', currentOrg.name);
       checkbox.setAttribute(`type`, `checkbox`);
 
       
 
-      var currentOrg = allOrganizations[i];
+      
       name.innerHTML = `${currentOrg.name}`;
       address.innerHTML = `${currentOrg.streetAddress}`;
       city.innerHTML = `${currentOrg.city}`;

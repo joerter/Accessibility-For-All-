@@ -7,6 +7,7 @@
 
 }
 
+
 body {
   font-family: "Helvetica";
   line-height: 1.5;
@@ -76,7 +77,7 @@ pre {
 #label {
   text-align: center;
   font-size: 25px;
-  color: #333;
+  color: #5A5353;
   margin-bottom: 10px;
 }
 
@@ -87,9 +88,46 @@ pre {
   margin-top: 10px;
 }
 
+#submit {
+  font-size: 25px;
+}
+
+#select {
+  font-size: 35px;
+  background-color: #E6CCBE;
+}
+
+
+#description {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  font-size: 35px;
+  color:white;
+  background-color: #087F8C;
+
+}
+
+#names {
+  color: #5A5353;
+  margin-left: 20px;
+  font-size: 30px;
+  margin-top: 50px;
+}
+
+
 .organization-form {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 10px;
+}
+
+.choose-organization {
+  background-color: pink;
+}
+
+.organizations {
+font-size: 50px;
 }
