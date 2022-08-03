@@ -4,7 +4,7 @@
   "description": "Maya's intern project",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon server.js",
+    "start": "node server.js",
     "generate:organizations": "zx generateOrganizations.mjs"
   },
   "repository": {
