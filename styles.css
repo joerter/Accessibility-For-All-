@@ -4,6 +4,7 @@
   color: grey;
   margin: 0 auto;
   max-width: 50em;
+  margin-top: 10px;
 
 }
 
@@ -58,6 +59,7 @@ pre {
   text-decoration: underline;
   font-size: 45px;
   text-align: center;
+  margin-bottom: 0px; 
 }
 
 #one {
@@ -105,7 +107,7 @@ pre {
   margin-top: 10px;
   font-size: 35px;
   color:white;
-  background-color: #087F8C;
+
 
 }
 
@@ -115,6 +117,29 @@ pre {
   font-size: 30px;
   margin-top: 50px;
 }
+
+#chooseOrganizations {
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+#div {
+  background-color: #087F8C;
+}
+
+input[type=submit] {
+  font-size: 20px;
+  background-color: #087F8C;
+  color: white;
+}
+
+label [type=checkboxLabel] {
+  color: white;
+}
+
+
 
 
 .organization-form {
